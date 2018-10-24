@@ -1,9 +1,0 @@
-br\com\devdojo\examgenerator\persistence\dao\LoginDAO.class
-br\com\devdojo\examgenerator\custom\CustomURLEconder.class
-br\com\devdojo\examgenerator\config\JSFConfiguration.class
-IndexBean.class
-br\com\devdojo\examgenerator\config\CustomRestTemplate.class
-br\com\devdojo\examgenerator\util\TokenUtil.class
-br\com\devdojo\examgenerator\filter\LoginFilter.class
-br\com\devdojo\examgenerator\bean\login\LoginBean.class
-br\com\devdojo\examgenerator\persistence\model\Token.class

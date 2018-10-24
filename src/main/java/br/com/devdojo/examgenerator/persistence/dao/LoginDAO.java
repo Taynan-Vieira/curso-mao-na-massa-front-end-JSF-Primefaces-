@@ -10,10 +10,10 @@ import org.springframework.http.ResponseEntity;
 import javax.inject.Inject;
 import java.io.Serializable;
 
+import static br.com.devdojo.examgenerator.util.ApiUtil.LOGIN_URL;
 import static org.springframework.http.HttpMethod.POST;
 
 public class LoginDAO implements Serializable {
-    private final String BASE_URL = "http://localhost:8088/login";
     private final CustomRestTemplate restTemplate;
     private final JsonUtil jsonUtil;
 
@@ -29,7 +29,7 @@ public class LoginDAO implements Serializable {
                 + ",\"password\":" + addQuotes(password) + "}";
         //tratando login inválido
         ResponseEntity<Token> tokenExchange = restTemplate
-                .exchange(BASE_URL, POST, new HttpEntity<>(loginJson, jsonUtil.createJsonHeader()), Token.class);
+                .exchange(LOGIN_URL, POST, new HttpEntity<>(loginJson, jsonUtil.createJsonHeader()), Token.class);
         return tokenExchange.getBody();
     }
 

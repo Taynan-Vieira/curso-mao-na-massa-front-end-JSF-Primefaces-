@@ -15,7 +15,7 @@ import java.io.Serializable;
 import static org.springframework.http.HttpMethod.GET;
 
 public class ProfessorDAO implements Serializable {
-    private final String BASE_URL = "http://localhost:8088/v1/professor";
+    private final String BASE_URL = "http://localhost:8085/v1/professor";
     private final JsonUtil jsonUtil;
 
     @Inject

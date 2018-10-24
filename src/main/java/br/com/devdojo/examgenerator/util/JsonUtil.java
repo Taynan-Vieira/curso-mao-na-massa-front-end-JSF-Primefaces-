@@ -1,6 +1,7 @@
 package br.com.devdojo.examgenerator.util;
 
 import br.com.devdojo.examgenerator.custom.CustomURLEconderDecoder;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 
@@ -28,4 +29,7 @@ public class JsonUtil implements Serializable {
         return header;
     }
 
+    public HttpEntity tokenizedHttpEntityHeader(){
+        return new HttpEntity(createTokenizedHeader());
+    }
 }

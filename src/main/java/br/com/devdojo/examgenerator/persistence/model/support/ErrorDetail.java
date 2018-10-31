@@ -1,9 +1,13 @@
 package br.com.devdojo.examgenerator.persistence.model.support;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ErrorDetail {
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZ")
     private LocalDateTime timestamp;
@@ -12,6 +16,16 @@ public class ErrorDetail {
     private String message;
     private String path;
     private String exception;
+    @JsonProperty("errors")
+    private List<Errors> errorsList;
+
+    public List<Errors> getErrorsList() {
+        return errorsList;
+    }
+
+    public void setErrorsList(List<Errors> errorsList) {
+        this.errorsList = errorsList;
+    }
 
     public String getException() {
         return exception;

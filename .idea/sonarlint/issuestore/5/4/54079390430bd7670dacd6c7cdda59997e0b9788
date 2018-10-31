@@ -1,4 +1,9 @@
 
-rsquid:S00116"SRename this field "LIST_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é‡ñá8€»Ñéé,
-?squid:S1170"!Make this final field static too.(é‡ñá8€»Ñéé,
-Qsquid:S1948".Make "restRemplate" transient or serializable.(Ä¾§ƒúÿÿÿÿ8­ÈÓ‡ê,
+?squid:S1170"!Make this final field static too.(“©8¸Ôô­ì,
+rsquid:S00116"SRename this field "LIST_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é‡ñá8€»Ñéé,
+Osquid:S1948",Make "listcourse" transient or serializable.(Œî¤áıÿÿÿÿ8¸Ôô­ì,
+?squid:S1170"!Make this final field static too.(é‡ñá8€»Ñéé,
+€squid:S00116"\Rename this field "CREATE_UPDATE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸”¬úÿÿÿÿ8¶‹ş³ì,
+vsquid:S00116"WRename this field "FIND_ONE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“©8¸Ôô­ì,
+Qsquid:S1948".Make "restRemplate" transient or serializable.(Ä¾§ƒúÿÿÿÿ8­ÈÓ‡ê,
+Dsquid:S1170"!Make this final field static too.(¸”¬úÿÿÿÿ8¸Ôô­ì,

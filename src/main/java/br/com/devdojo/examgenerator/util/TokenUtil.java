@@ -35,17 +35,6 @@ public class TokenUtil {
                 .orElse("");
     }
 
-//    public boolean isExpirationTimeFromCookieValid(HttpServletRequest request){
-//        if(request.getCookies() == null) return "false";
-//        List<Cookie> cookieList = asList(request.getCookies();
-//        String expirationTime = cookieList.stream()
-//                .filter(cookie -> cookie.getName().equals("expirationTime"))
-//                .map(Cookie::getValue)
-//                .findFirst()
-//                .orElse("");
-//        return validateIfTimeNowIsBeforeTokenExpires(expirationTime);
-//    }
-
     private boolean validateIfTimeNowIsBeforeTokenExpires(String expirationTime){
          if(expirationTime.isEmpty()) return false;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS")

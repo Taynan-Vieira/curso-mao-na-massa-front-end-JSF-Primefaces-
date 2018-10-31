@@ -35,3 +35,25 @@ w
 Gsrc/main/java/br/com/devdojo/examgenerator/config/JSFConfiguration.java,e\6\e6bb77da88282e4820239ac78dc85109e05219f4
 L
 src/main/java/IndexBean.java,0\3\0308d7a5f97b5f21fbe37628dc0ef27f2357bd2f
+E
+web/course/list.xhtml,f\0\f0a1876ac763193eaced3ebd88501e2b5cbc6514
+z
+Jsrc/main/java/br/com/devdojo/examgenerator/bean/course/CourseEditBean.java,9\f\9fff540f8f355cf2b479d723f27621ceb5a2e4b6
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+…
+Usrc/main/java/br/com/devdojo/examgenerator/persistence/model/support/ErrorDetail.java,7\1\71117766eddf6451462714b147ee24ab0038d678
+ƒ
+Ssrc/main/java/br/com/devdojo/examgenerator/persistence/model/support/Arguments.java,5\d\5d82899404d06f406a381e6974bcf09cad0a3964
+€
+Psrc/main/java/br/com/devdojo/examgenerator/interceptor/ExceptionInterceptor.java,a\d\ad68bf01c99cf2a98f30d05cd00b9438a346db5c
+€
+Psrc/main/java/br/com/devdojo/examgenerator/persistence/model/support/Errors.java,c\6\c6c4173f59432aa05fa0b24a147947fb69ccf05b
+?
+web/login.xhtml,a\3\a33720f4d255f58e1df1fffa813bba8f220ea695
+E
+web/course/edit.xhtml,4\6\464d9efd67a72c4db917946ab72ed20af684d96b
+G
+web/course/create.xhtml,b\d\bd3d66f55c7b112451f580407bf47e455bdc21bb
+~
+Nsrc/main/java/br/com/devdojo/examgenerator/bean/course/CourseRegisterBean.java,d\8\d857e4751cfdab7a51c32920dbbd7de48da76b53

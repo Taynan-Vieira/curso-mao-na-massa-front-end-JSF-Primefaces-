@@ -2,7 +2,7 @@ package br.com.devdojo.examgenerator.persistence.model;
 
 public class Course extends AbstractEntity {
 
-//    @NotEmpty(message = "O nome do curso não pode estar vazio")
+    //    @NotEmpty(message = "O nome do curso não pode estar vazio")
     private String name;
     private Professor professor;
 

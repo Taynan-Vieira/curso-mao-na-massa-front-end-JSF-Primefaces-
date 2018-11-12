@@ -8,6 +8,7 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.List;
 
 @Named
@@ -15,8 +16,9 @@ import java.util.List;
 public class CourseListBean implements Serializable {
 
     private CourseDAO courseDAO;
-    private List<Course> courseList;
+    private List<Course> courseList, listDateCreationCourse, listDateEventCourse;
     private String name = "";
+    private LocalDate dateCreationCourse, dateEventCourse;
 
     @Inject
     public CourseListBean(CourseDAO courseDAO) {
@@ -36,9 +38,23 @@ public class CourseListBean implements Serializable {
         return courseList;
     }
 
+    public void search2(){
+        listDateCreationCourse = courseDAO.listDateCreateCourse(dateCreationCourse);
+    }
+
+    public List<Course> getDatesCourses() {
+        return listDateCreationCourse;
+    }
+
+    public void search3(){
+        listDateEventCourse = courseDAO.listDateEventCourse(dateEventCourse);
+    }
+
     public void setCourseList(List<Course> courseList) {
         this.courseList = courseList;
     }
+    
+
 
     public String getName() {
         return name;
@@ -47,4 +63,7 @@ public class CourseListBean implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+
+
 }

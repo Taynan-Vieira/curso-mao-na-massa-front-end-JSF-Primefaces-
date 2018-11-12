@@ -1,5 +1,5 @@
 
-xsquid:S1488"aImmediately return this expression instead of assigning it to the temporary variable "professor".(—›œÈ
-ksquid:S00116"SRename this field "BASE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ªËî
-8squid:S1170"!Make this final field static too.(´ªËî
+8squid:S1170"!Make this final field static too.(…Àù¦
+ksquid:S00116"SRename this field "BASE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Àù¦
 isquid:UselessImportCheck"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ
+xsquid:S1488"aImmediately return this expression instead of assigning it to the temporary variable "professor".(—›œÈ

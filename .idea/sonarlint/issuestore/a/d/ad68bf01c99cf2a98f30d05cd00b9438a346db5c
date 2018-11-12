@@ -1,5 +1,8 @@
 
-?squid:S1148'"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-\squid:S1193""@Replace the usage of the "instanceof" operator by a catch block.(¦†»øÿÿÿÿ
-Hsquid:S1948"1Make "externalContext" transient or serializable.(µø–³
-\squid:S1193""@Replace the usage of the "instanceof" operator by a catch block.(¦†»øÿÿÿÿ
+hsquid:UselessImportCheck"=Remove this unused import 'javax.faces.context.FacesContext'.(¸Öœ8ºÚçÙì,
+\squid:S1193%"@Replace the usage of the "instanceof" operator by a catch block.(¦†»øÿÿÿÿ
+\squid:S1193%"@Replace the usage of the "instanceof" operator by a catch block.(¦†»øÿÿÿÿ
+Hsquid:S1948"1Make "externalContext" transient or serializable.(µø–³
+?squid:S1148("#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Qsquid:S1068"3Remove this unused "externalContext" private field.(µø–³8ºÚçÙì,
+lsquid:UselessImportCheck"ARemove this unused import 'javax.faces.application.FacesMessage'.(Ø–÷Ì8ºÚçÙì,

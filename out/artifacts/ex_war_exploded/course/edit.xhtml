@@ -11,17 +11,25 @@
             <f:viewAction action="#{courseEditBean.init}"/>
         </f:metadata>
         <o:form includeRequestParams="true">
-            <h:panelGrid columns="1">
+            <h:panelGrid columns="2">
                 <p:outputLabel value="Name" for="name"/>
                 <p:inputText value="#{courseEditBean.course.name}" id="name" required="true"
                              requiredMessage="O nome é necessário"/>
-
+                <p:outputLabel for="dateEvent" value="Data:"/>
+                <p:calendar id="dateEvent" value="#{courseEditBean.course.dateEvent}" pattern="dd/MM/yyyy" converter="localDateConverter" showOn="button"/>
             </h:panelGrid>
-            <h:panelGrid columns="2">
+            <h:panelGrid columns="3">
                 <p:link outcome="list">
                     <p:button value="Cancelar"/></p:link>
                 <p:commandButton value="Atualizar" action="#{courseEditBean.update}"/>
+                <p:commandButton value="Deletar" action="#{courseEditBean.delete}">
+                    <p:confirm header="Confirmação" message="Você tem certeza?" icon="ui-icon-alert" />
+                </p:commandButton>
             </h:panelGrid>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>
+            </p:confirmDialog>
         </o:form>
     </ui:define>
 </ui:composition>

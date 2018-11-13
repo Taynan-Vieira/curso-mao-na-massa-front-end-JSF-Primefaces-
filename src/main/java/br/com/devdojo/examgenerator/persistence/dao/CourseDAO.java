@@ -4,6 +4,7 @@ import br.com.devdojo.examgenerator.annotation.ExceptionHandler;
 import br.com.devdojo.examgenerator.custom.CustomRestTemplate;
 import br.com.devdojo.examgenerator.custom.CustomTypeReference;
 import br.com.devdojo.examgenerator.persistence.model.Course;
+import br.com.devdojo.examgenerator.persistence.model.Question;
 import br.com.devdojo.examgenerator.util.ApiUtil;
 import br.com.devdojo.examgenerator.util.JsonUtil;
 import org.springframework.http.HttpMethod;

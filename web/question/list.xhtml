@@ -1,31 +1,35 @@
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
                 xmlns:h="http://xmlns.jcp.org/jsf/html"
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:o="http://omnifaces.org/ui"
                 template="../WEB-INF/templates/template.xhtml"
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
         <f:metadata>
-            <f:viewParam name="courseId" value="#{questionListBean.courseId}" required="true" requiredMessage="Use os link para chegar até aqui "/>
+            <f:viewParam name="courseId" value="#{questionListBean.courseId}" required="true"
+                         requiredMessage="Use os link para chegar até aqui "/>
             <f:viewAction action="#{questionListBean.init}"/>
         </f:metadata>
-        <h:form>
-            <h3><h:outputText value="Course: #{questionListBean.course.name}"/></h3>
-            <h:panelGrid columns="6">
+        <o:form id="form" includeRequestParams="true">
+        <h3><h:outputText value="Course: #{questionListBean.course.name}"/></h3>
+            <h:link value="Create questions" outcome="create">
+                <f:param name="courseId" value="#{questionListBean.courseId}"/>
+            </h:link>
+            <h:panelGrid columns="2">
                 <p:inputText value="#{questionListBean.title}"/>
                 <p:commandButton actionListener="#{questionListBean.search}"
                                  ajax="true" update="dataTable" icon="ui-icon-search"/>
-                <!--<h:link value="Criar Curso" outcome="create"></h:link>-->
             </h:panelGrid>
-        </h:form>
+        </o:form>
         <p:dataTable value="#{questionListBean.questionList}"
                      var="question" id="dataTable">
-            <p:column headerText="Titulo do Curso">
+            <p:column headerText="Titulo da Questão">
                 <h:outputText value="#{question.title}"></h:outputText>
             </p:column>
             <!--<p:column headerText="Editar">-->
-                <!--<h:link value="editar" outcome="edit">-->
-                    <!--<f:param name="id" value="#{course.id}"/>-->
-                <!--</h:link>-->
+            <!--<h:link value="editar" outcome="edit">-->
+            <!--<f:param name="id" value="#{course.id}"/>-->
+            <!--</h:link>-->
             <!--</p:column>-->
         </p:dataTable>
     </ui:define>

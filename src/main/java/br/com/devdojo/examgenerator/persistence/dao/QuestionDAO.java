@@ -18,7 +18,7 @@ import java.util.List;
 import static org.springframework.http.HttpMethod.*;
 
 public class QuestionDAO implements Serializable {
-    private final String LIST_URL = ApiUtil.BASE_URL + "/professor/course/question/{courseId}/";
+    private final String LIST_URL = ApiUtil.BASE_URL + "/professor/course/question/list/{courseId}/";
     private final String DELETE_OR_FIND_ONE_URL = ApiUtil.BASE_URL + "/professor/course/question/{id}";
     private final String CREATE_UPDATE_URL = ApiUtil.BASE_URL + "/professor/course/question/";
     private final CustomRestTemplate restRemplate;
@@ -35,7 +35,7 @@ public class QuestionDAO implements Serializable {
     @ExceptionHandler
     public List<Question> list(long courseId, String title) {
         UriComponents url = UriComponentsBuilder.fromUriString(LIST_URL).queryParam("title", title).build();
-        ResponseEntity<List<Question>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), questionList.typeReference());
+        ResponseEntity<List<Question>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), questionList.typeReference(), courseId);
         return exchange.getBody();
     }
 

@@ -18,14 +18,20 @@
                 <p:inputText value="#{questionEditBean.question.title}" id="title" required="true"
                              requiredMessage="O Título é necessário"/>
             </h:panelGrid>
-            <h:panelGrid columns="2">
+            <h:panelGrid columns="3">
                 <p:link outcome="list">
                     <p:button value="Cancelar"/>
                     <f:param name="courseId" value="#{questionEditBean.question.course.id}"/>
                 </p:link>
-                <p:commandButton value="Salvar" action="#{questionEditBean.update}"/>
-
+                <p:commandButton value="Deletar" action="#{questionEditBean.delete}">
+                    <p:confirm header="Confirmação" message="Você tem certeza?" icon="ui-icon-alert"/>
+                </p:commandButton>
+                <p:commandButton value="Atualizar" action="#{questionEditBean.update}"/>
             </h:panelGrid>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>
+            </p:confirmDialog>
         </o:form>
 
     </ui:define>

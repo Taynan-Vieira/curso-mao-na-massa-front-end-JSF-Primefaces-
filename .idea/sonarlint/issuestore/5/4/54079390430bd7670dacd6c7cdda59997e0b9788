@@ -1,15 +1,16 @@
 
-Dsquid:S1170"!Make this final field static too.(¸”¬úÿÿÿÿ8¸Ôô­ì,
-?squid:S1170"!Make this final field static too.(é‡ñá8€»Ñéé,
-squid:S00116"]Rename this field "LIST_DATE_CREATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö˜Áüÿÿÿÿ8ÆÒ¿¢ï,
-rsquid:S00116"SRename this field "LIST_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é‡ñá8€»Ñéé,
-Dsquid:S1170"!Make this final field static too.(Ö˜Áüÿÿÿÿ8€î½¢ï,
-€squid:S00116"\Rename this field "CREATE_UPDATE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸”¬úÿÿÿÿ8¶‹ş³ì,
-Tsquid:S1948"6Make "listcoursedatecreate" transient or serializable.(˜«ß8éã™¥ï,
-€squid:S00116"aRename this field "DELETE_OR_FIND_ONE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±õßğ8¸Äª…í,
-Ssquid:S1948"5Make "listcoursedateevent" transient or serializable.(ŠéøŠ8éã™¥ï,
-Osquid:S1948",Make "listcourse" transient or serializable.(Œî¤áıÿÿÿÿ8¸Ôô­ì,
-?squid:S1170"!Make this final field static too.(±õßğ8¸Ôô­ì,
-~squid:S00116"ZRename this field "LIST_DATE_EVENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò½òùÿÿÿÿ8ÅÔø¤ï,
-Qsquid:S1948".Make "restRemplate" transient or serializable.(Ä¾§ƒúÿÿÿÿ8­ÈÓ‡ê,
-Dsquid:S1170"!Make this final field static too.(ò½òùÿÿÿÿ8ÅÔø¤ï,
+Osquid:S1948",Make "listcourse" transient or serializable.(Œî¤áıÿÿÿÿ8¸Ôô­ì,
+Tsquid:S1948"6Make "listcoursedatecreate" transient or serializable.(˜«ß8éã™¥ï,
+~squid:S00116"ZRename this field "LIST_DATE_EVENT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò½òùÿÿÿÿ8ÅÔø¤ï,
+€squid:S00116"aRename this field "DELETE_OR_FIND_ONE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±õßğ8¸Äª…í,
+rsquid:S00116"SRename this field "LIST_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é‡ñá8€»Ñéé,
+Ssquid:S1948 "5Make "listcoursedateevent" transient or serializable.(ŠéøŠ8éã™¥ï,
+Dsquid:S1170"!Make this final field static too.(ò½òùÿÿÿÿ8ÅÔø¤ï,
+Qsquid:S1948".Make "restRemplate" transient or serializable.(Ä¾§ƒúÿÿÿÿ8­ÈÓ‡ê,
+Dsquid:S1170"!Make this final field static too.(Ö˜Áüÿÿÿÿ8€î½¢ï,
+squid:S00116"]Rename this field "LIST_DATE_CREATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö˜Áüÿÿÿÿ8ÆÒ¿¢ï,
+€squid:S00116"\Rename this field "CREATE_UPDATE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸”¬úÿÿÿÿ8¶‹ş³ì,
+Dsquid:S1170"!Make this final field static too.(¸”¬úÿÿÿÿ8¸Ôô­ì,
+?squid:S1170"!Make this final field static too.(é‡ñá8€»Ñéé,
+?squid:S1170"!Make this final field static too.(±õßğ8¸Ôô­ì,
+„squid:UselessImportCheck"TRemove this unused import 'br.com.devdojo.examgenerator.persistence.model.Question'.(ÙèˆÆşÿÿÿÿ8Âœ»òğ,

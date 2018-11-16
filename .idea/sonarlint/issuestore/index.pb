@@ -75,3 +75,15 @@ C
 Ksrc/main/java/br/com/devdojo/examgenerator/persistence/dao/QuestionDAO.java,7\f\7f61d0fc3cb149840808e8c11fce24dbab426b2d
 G
 web/question/list.xhtml,a\c\ac3da5f004d742854207583bf0de8312938f8d20
+L
+web/WEB-INF/faces-config.xml,9\9\99b16d0fbf6b6cc43bc74c21b6854812f1b56330
+J
+web/resources/js/locale.js,e\e\ee3efd5fb64506fffd1ef94c18e5821cb3267717
+‚
+Rsrc/main/java/br/com/devdojo/examgenerator/bean/question/QuestionRegisterBean.java,9\2\9296ae37c832e394ecca75c0494d2593814a02ff
+I
+web/question/create.xhtml,4\4\447cf7bb2c74366107857908dc592f354c777de8
+~
+Nsrc/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java,0\a\0a6918d929ec89ad5e7170079b4ab9043e01b383
+G
+web/question/edit.xhtml,1\4\1471a0ed96d0a86ba17af4d3c50e619bc186f212

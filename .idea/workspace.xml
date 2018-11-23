@@ -7,13 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b03bc1ce-4c8a-4fd3-995c-361fe9c21197" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54079390430bd7670dacd6c7cdda59997e0b9788" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54079390430bd7670dacd6c7cdda59997e0b9788" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/choice/ChoiceBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/ChoiceDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/Choice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/choice/choices.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/style/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a6918d929ec89ad5e7170079b4ab9043e01b383" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/a/0a6918d929ec89ad5e7170079b4ab9043e01b383" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f61d0fc3cb149840808e8c11fce24dbab426b2d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f61d0fc3cb149840808e8c11fce24dbab426b2d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa5475d7efc673405bef6375a6e96988a0dc91f6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa5475d7efc673405bef6375a6e96988a0dc91f6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1af6e25379429bf0bc7bd497f74194445efb446" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/1/d1af6e25379429bf0bc7bd497f74194445efb446" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d43a08286ae2c118ac6b1ad18282ed016d9e8b69" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d43a08286ae2c118ac6b1ad18282ed016d9e8b69" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/question/edit.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/question/edit.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ex_war_exploded/course/create.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ex_war_exploded/course/create.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ex_war_exploded/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ex_war_exploded/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionListBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionListBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/QuestionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/QuestionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/course/create.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/course/create.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/question/list.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/question/list.xhtml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,9 +56,10 @@
     <session id="-1612487514">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.100" value="1" />
+          <entry key="project.open.time.107" value="1" />
           <entry key="project.open.time.142" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="3" />
@@ -66,49 +79,54 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="27" />
+          <entry key="class" value="28" />
+          <entry key="css" value="2" />
           <entry key="iml" value="6" />
-          <entry key="java" value="292" />
+          <entry key="java" value="299" />
           <entry key="js" value="19" />
           <entry key="pom" value="1" />
           <entry key="properties" value="1" />
-          <entry key="xhtml" value="57" />
+          <entry key="xhtml" value="64" />
           <entry key="xml" value="37" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="27" />
+          <entry key="CLASS" value="28" />
+          <entry key="CSS" value="2" />
           <entry key="IDEA_MODULE" value="6" />
-          <entry key="JAVA" value="292" />
+          <entry key="JAVA" value="299" />
           <entry key="JavaScript" value="19" />
           <entry key="Properties" value="1" />
-          <entry key="XHTML" value="57" />
+          <entry key="XHTML" value="64" />
           <entry key="XML" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="77" />
           <entry key="dummy" value="117" />
-          <entry key="java" value="9180" />
+          <entry key="java" value="9616" />
           <entry key="js" value="121" />
-          <entry key="xhtml" value="2979" />
+          <entry key="xhtml" value="3505" />
           <entry key="xml" value="648" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9180" />
+          <entry key="CSS" value="77" />
+          <entry key="JAVA" value="9616" />
           <entry key="JavaScript" value="121" />
           <entry key="PLAIN_TEXT" value="117" />
-          <entry key="XHTML" value="2979" />
+          <entry key="XHTML" value="3505" />
           <entry key="XML" value="648" />
         </counts>
       </usages-collector>
@@ -121,54 +139,127 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/question/edit.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="13" column="21" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/course/edit.xhtml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/Choice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="26" column="34" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/ChoiceDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="118">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#1253#1254#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
-                <element signature="e#1409#1410#0" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
-                <element signature="e#1492#1493#0" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/course/CourseEditBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/choice/ChoiceBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="107">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
+                <element signature="e#1154#1155#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1381#1382#0" expanded="true" />
+                <element signature="e#1421#1422#0" expanded="true" />
+                <element signature="e#1464#1465#0" expanded="true" />
+                <element signature="e#1497#1498#0" expanded="true" />
+                <element signature="e#1555#1556#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
+                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="e#1667#1668#0" expanded="true" />
+                <element signature="e#1717#1718#0" expanded="true" />
+                <element signature="e#1761#1762#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/weld/servlet/weld-servlet/2.4.5.Final/weld-servlet-2.4.5.Final.jar!/org/jboss/weld/interceptor/proxy/TerminalAroundInvokeInvocationContext.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/choice/choices.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/question/list.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/QuestionDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="56" column="5" lean-forward="true" selection-start-line="49" selection-end-line="56" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionListBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+              <folding>
+                <element signature="e#1053#1054#0" expanded="true" />
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1199#1200#0" expanded="true" />
+                <element signature="e#1263#1264#0" expanded="true" />
+                <element signature="e#1311#1312#0" expanded="true" />
+                <element signature="e#1344#1345#0" expanded="true" />
+                <element signature="e#1373#1374#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
+                <element signature="e#1453#1454#0" expanded="true" />
+                <element signature="e#1485#1486#0" expanded="true" />
+                <element signature="e#1513#1514#0" expanded="true" />
+                <element signature="e#1555#1556#0" expanded="true" />
+                <element signature="e#1589#1590#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
+                <element signature="e#1699#1700#0" expanded="true" />
+                <element signature="e#1739#1740#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,9 +271,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="jsf" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Class" />
+        <option value="jsf" />
       </list>
     </option>
   </component>
@@ -220,25 +312,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/web/login.xhtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/web/course/edit.xhtml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/login.xhtml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/templates/template.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/config/JSFConfiguration.java" />
-        <option value="$PROJECT_DIR$/web/login.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/filter/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/docs/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/login/LoginBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/custom/CustomRestTemplate.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/custom/CustomObjectMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/annotation/ExceptionHandler.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/beans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/custom/CustomURLEconder.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/custom/CustomURLEconderDecoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/AbstractEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/IndexBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/Professor.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/LoginDAO.java" />
@@ -255,7 +339,6 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/course/CourseRegisterBean.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/Question.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionListBean.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/course/CourseListBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/util/FacesConvertLocalDate.java" />
@@ -268,14 +351,24 @@
         <option value="$PROJECT_DIR$/web/course/edit.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/course/CourseEditBean.java" />
         <option value="$PROJECT_DIR$/web/resources/js/locale.js" />
-        <option value="$PROJECT_DIR$/web/course/create.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/QuestionDAO.java" />
         <option value="$PROJECT_DIR$/web/question/create.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/CourseDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionRegisterBean.java" />
-        <option value="$PROJECT_DIR$/web/question/list.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java" />
         <option value="$PROJECT_DIR$/web/question/edit.xhtml" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/course/create.xhtml" />
+        <option value="$PROJECT_DIR$/web/login.xhtml" />
+        <option value="$PROJECT_DIR$/web/resources/style/theme.css" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/AbstractEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/Choice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionListBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/QuestionDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/choice/ChoiceBean.java" />
+        <option value="$PROJECT_DIR$/web/choice/choices.xhtm.xhtml" />
+        <option value="$PROJECT_DIR$/web/choice/choices.xhtml" />
+        <option value="$PROJECT_DIR$/web/question/list.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/ChoiceDAO.java" />
       </list>
     </option>
   </component>
@@ -315,11 +408,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-1327" />
-    <option name="y" value="13" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1374" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -328,8 +421,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,17 +433,6 @@
             <path>
               <item name="ex" type="b2602c69:ProjectViewProjectNode" />
               <item name="ex" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -382,16 +464,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="examgenerator" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="examgenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ex" type="b2602c69:ProjectViewProjectNode" />
@@ -435,28 +507,25 @@
             <path>
               <item name="ex" type="b2602c69:ProjectViewProjectNode" />
               <item name="ex" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="examgenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ex" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ex" type="b2602c69:ProjectViewProjectNode" />
               <item name="ex" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
+              <item name="choice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ex" type="b2602c69:ProjectViewProjectNode" />
               <item name="ex" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="question" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ex" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ex" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -478,9 +547,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542306248278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543000441165" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/index.xhtml" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -488,23 +558,24 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\question" />
-      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\WEB-INF" />
-      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\META-INF" />
-      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web" />
-      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\src\main" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.com.devdojo.examgenerator.bean.question" />
-      <recent name="br.com.devdojo.examgenerator.persistence.dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\WEB-INF" />
       <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\META-INF" />
       <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\WEB-INF\resources" />
       <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\resources" />
       <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.devdojo.examgenerator.persistence.model" />
+      <recent name="br.com.devdojo.examgenerator.bean.question" />
+      <recent name="br.com.devdojo.examgenerator.persistence.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\question" />
+      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\WEB-INF" />
+      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web\META-INF" />
+      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\web" />
+      <recent name="C:\Users\Taynan-Dev\IdeaProjects\ex\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -661,7 +732,9 @@
       <workItem from="1541435463829" duration="30959000" />
       <workItem from="1541771127824" duration="16232000" />
       <workItem from="1542040436144" duration="23025000" />
-      <workItem from="1542384877745" duration="4139000" />
+      <workItem from="1542384877745" duration="9530000" />
+      <workItem from="1542644471052" duration="7104000" />
+      <workItem from="1542817337375" duration="10485000" />
     </task>
     <servers />
   </component>
@@ -671,7 +744,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239550000" />
+    <option name="totallyTimeSpent" value="262530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,9 +757,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1374" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.87025315" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.87025315" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" sideWeight="0.50445104" side_tool="true" weight="0.29954615" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -698,7 +770,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" weight="0.39116204" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.4977307" visible="true" weight="0.43698853" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.4977307" visible="true" weight="0.38952535" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924356" weight="0.5695581" />
@@ -734,11 +806,13 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionListBean.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="6" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/ChoiceDAO.java</url>
+          <line>35</line>
+          <properties class="br.com.devdojo.examgenerator.persistence.dao.ChoiceDAO" method="list">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -776,62 +850,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="557" column="33" selection-start-line="557" selection-start-column="33" selection-end-line="557" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/IndexBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/config/JSFConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/LoginDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/Professor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/ProfessorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/course/CourseListBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/javax.faces/2.3.3/javax.faces-2.3.3.jar!/javax/faces/context/FacesContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="267" selection-start-line="249" selection-end-line="267" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/util/ApiUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -897,24 +915,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -948,13 +959,6 @@
     <entry file="file://$PROJECT_DIR$/web/META-INF/js/locale.js" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/js/locale.js" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/resources/js/locale.js" />
-    <entry file="file://$PROJECT_DIR$/web/course/create.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/course/list.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1015,19 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,17 +1039,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/question/list.xhtml">
+    <entry file="file://$PROJECT_DIR$/web/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        <state relative-caret-position="119">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/course/create.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/style/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/course/edit.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="26" column="34" selection-start-line="24" selection-start-column="16" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding>
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/course/CourseEditBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="41" column="5" selection-start-line="36" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/Choice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/AbstractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionListBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="345">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
           <folding>
             <element signature="e#1053#1054#0" expanded="true" />
             <element signature="e#1117#1118#0" expanded="true" />
@@ -1073,6 +1136,7 @@
             <element signature="e#1485#1486#0" expanded="true" />
             <element signature="e#1513#1514#0" expanded="true" />
             <element signature="e#1555#1556#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
             <element signature="e#1622#1623#0" expanded="true" />
             <element signature="e#1653#1654#0" expanded="true" />
             <element signature="e#1699#1700#0" expanded="true" />
@@ -1083,63 +1147,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/QuestionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="396">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="49" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/model/AbstractEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/course/edit.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/course/CourseEditBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/question/edit.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="221">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/choice/choices.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/question/list.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/bean/choice/ChoiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1154#1155#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1555#1556#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1761#1762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/weld/servlet/weld-servlet/2.4.5.Final/weld-servlet-2.4.5.Final.jar!/org/jboss/weld/interceptor/proxy/TerminalAroundInvokeInvocationContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/devdojo/examgenerator/persistence/dao/ChoiceDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

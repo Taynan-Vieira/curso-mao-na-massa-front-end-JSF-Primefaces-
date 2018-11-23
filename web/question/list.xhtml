@@ -11,7 +11,7 @@
             <f:viewAction action="#{questionListBean.init}"/>
         </f:metadata>
         <o:form id="form" includeRequestParams="true">
-        <h3><h:outputText value="Course: #{questionListBean.course.name}"/></h3>
+            <h3><h:outputText value="Course: #{questionListBean.course.name}"/></h3>
             <h:link value="Create questions" outcome="create">
                 <f:param name="courseId" value="#{questionListBean.courseId}"/>
             </h:link>
@@ -27,9 +27,14 @@
                 <h:outputText value="#{question.title}"></h:outputText>
             </p:column>
             <p:column headerText="Editar">
-            <h:link value="editar" outcome="edit">
-            <f:param name="questionId" value="#{question.id}"/>
-            </h:link>
+                <h:link value="editar" outcome="edit">
+                    <f:param name="questionId" value="#{question.id}"/>
+                </h:link>
+            </p:column>
+            <p:column headerText="Escolhas">
+                <h:link value="escolhas" outcome="/choice/choices">
+                    <f:param name="questionId" value="#{question.id}"/>
+                </h:link>
             </p:column>
         </p:dataTable>
     </ui:define>

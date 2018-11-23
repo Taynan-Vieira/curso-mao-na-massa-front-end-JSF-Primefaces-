@@ -3,11 +3,12 @@
                 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
                 template="WEB-INF/templates/template.xhtml"
                 xmlns:p="http://primefaces.org/ui">
+                <h:outputStylesheet library="style" name="theme.css"></h:outputStylesheet>
     <ui:define name="content">
-        <h:form>
-            <h:panelGrid columns="1">
-                <h:inputText value="#{loginBean.username}" required="true" requiredMessage="Nome de Usuário Necesessário"/>
-                <h:inputSecret value="#{loginBean.password}" required="true" requiredMessage="Senha de Usuário Necesessária"/>
+        <h:form class="login">
+            <h:panelGrid cellspacing="10" columns="1" cellpadding="5">
+                <h:inputText placeholder="Usuário" value="#{loginBean.username}" required="true" requiredMessage="Nome de Usuário Necesessário" position="center"/>
+                <h:inputSecret placeholde="Senha" value="#{loginBean.password}" required="true" requiredMessage="Senha de Usuário Necesessária"/>
             <h:commandButton value="Login" action="#{loginBean.login}" ajax="false"/> <!--Login -->
             </h:panelGrid>
         </h:form>

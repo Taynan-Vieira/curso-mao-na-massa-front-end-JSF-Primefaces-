@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class AbstractEntity implements Serializable  {
     protected long id;
-
+    protected boolean enabled = true;
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -25,5 +25,13 @@ public class AbstractEntity implements Serializable  {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }

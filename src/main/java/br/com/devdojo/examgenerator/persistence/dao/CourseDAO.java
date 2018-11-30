@@ -2,11 +2,10 @@ package br.com.devdojo.examgenerator.persistence.dao;
 
 import br.com.devdojo.examgenerator.annotation.ExceptionHandler;
 import br.com.devdojo.examgenerator.custom.CustomRestTemplate;
-import br.com.devdojo.examgenerator.custom.CustomTypeReference;
 import br.com.devdojo.examgenerator.persistence.model.Course;
-import br.com.devdojo.examgenerator.persistence.model.Question;
 import br.com.devdojo.examgenerator.util.ApiUtil;
 import br.com.devdojo.examgenerator.util.JsonUtil;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.util.UriComponents;
@@ -27,37 +26,37 @@ public class CourseDAO implements Serializable {
     private final String CREATE_UPDATE_URL = ApiUtil.BASE_URL + "/professor/course/";
     private final CustomRestTemplate restRemplate;
     private final JsonUtil jsonUtil;
-    private final CustomTypeReference<List<Course>> listcourse;
-    private final CustomTypeReference<List<Course>> listcoursedatecreate;
-    private final CustomTypeReference<List<Course>> listcoursedateevent;
+    private final ParameterizedTypeReference<List<Course>> listCourseTypeReference = new ParameterizedTypeReference<List<Course>>() {
+    };
+    private final ParameterizedTypeReference<List<Course>> listCourseDateCreateTypeReference = new ParameterizedTypeReference<List<Course>>() {
+    };
+    private final ParameterizedTypeReference<List<Course>> listCourseDateEventTypeReference = new ParameterizedTypeReference<List<Course>>() {
+    };
 
     @Inject
-    public CourseDAO(CustomRestTemplate restTRemplate, CustomRestTemplate restRemplate, JsonUtil jsonUtil, CustomTypeReference<List<Course>> listCourse, CustomTypeReference<List<Course>> listcoursedatecreate, CustomTypeReference<List<Course>> listcoursedateevent) {
+    public CourseDAO(CustomRestTemplate restRemplate, JsonUtil jsonUtil) {
         this.restRemplate = restRemplate;
         this.jsonUtil = jsonUtil;
-        this.listcourse = listCourse;
-        this.listcoursedatecreate = listcoursedatecreate;
-        this.listcoursedateevent = listcoursedateevent;
     }
 
     @ExceptionHandler
     public List<Course> list(String name) {
         UriComponents url = UriComponentsBuilder.fromUriString(LIST_URL).queryParam("name", name).build();
-        ResponseEntity<List<Course>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), listcourse.typeReference());
+        ResponseEntity<List<Course>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), listCourseTypeReference, name);
         return exchange.getBody();
     }
 
     @ExceptionHandler
     public List<Course> listDateCreateCourse(LocalDate dateCreation) {
         UriComponents url = UriComponentsBuilder.fromUriString(LIST_DATE_CREATION).queryParam("dateCreation", dateCreation).build();
-        ResponseEntity<List<Course>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), listcoursedatecreate.typeReference());
+        ResponseEntity<List<Course>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), listCourseDateCreateTypeReference, dateCreation);
         return exchange.getBody();
     }
 
     @ExceptionHandler
     public List<Course> listDateEventCourse(LocalDate dateEvent) {
         UriComponents url = UriComponentsBuilder.fromUriString(LIST_DATE_EVENT).queryParam("dateEvent", dateEvent).build();
-        ResponseEntity<List<Course>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), listcoursedateevent.typeReference());
+        ResponseEntity<List<Course>> exchange = restRemplate.exchange(url.toString(), GET, jsonUtil.tokenizedHttpEntityHeader(), listCourseDateEventTypeReference, dateEvent);
         return exchange.getBody();
     }
 

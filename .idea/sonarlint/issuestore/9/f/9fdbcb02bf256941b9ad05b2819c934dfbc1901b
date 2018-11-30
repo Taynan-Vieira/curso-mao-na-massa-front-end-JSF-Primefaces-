@@ -1,0 +1,7 @@
+
+csquid:HiddenFieldCheck;":Rename "choice" which hides the field declared at line 24.(¢ÜÓ¿8ƒÆïÚõ,
+[
+squid:S106<"9Replace this use of System.out or System.err by a logger.(Œ›ìÉøÿÿÿÿ8ğ­øÚõ,
+hsquid:UselessImportCheck"=Remove this unused import 'javax.faces.context.FacesContext'.(¸Öœ8ş÷Úõ,
+[squid:HiddenFieldCheck,":Rename "choice" which hides the field declared at line 24.(ÎÎ/
+lsquid:UselessImportCheck"ARemove this unused import 'javax.faces.application.FacesMessage'.(Ø–÷Ì8ş÷Úõ,

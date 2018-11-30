@@ -1,2 +1,6 @@
 
-Psquid:S1659"-Declare "dateCoursesList" on a separate line.(ûİ¬–ùÿÿÿÿ8¿ùëùî,
+Tsquid:S1068"7Remove this unused "listDateEventCourse" private field.(„¤šK8ùì²²õ,
+Qsquid:S1659"4Declare "listDateCreationCourse" on a separate line.(„¤šK8ùì²²õ,
+Nsquid:S1659"1Declare "listDateEventCourse" on a separate line.(„¤šK8ùì²²õ,
+Ksquid:S1659"-Declare "dateEventCourse" on a separate line.(ÚøÆ£8ô´Şõ,
+squid:S1450"bRemove the "listDateEventCourse" field and declare it as a local variable in the relevant methods.(„¤šK8Ï³€ßõ,

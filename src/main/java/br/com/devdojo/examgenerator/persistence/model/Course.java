@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 
 public class Course extends AbstractEntity {
-
     //    @NotEmpty(message = "O nome do curso não pode estar vazio")
     private String name;
     private Professor professor;
@@ -40,9 +39,15 @@ public class Course extends AbstractEntity {
         return dateCreation;
     }
 
-    public void setDate(LocalDate dateCreation) {
+    public LocalDate getDateCreation() {
+        return dateCreation;
+    }
+
+    public void setDateCreation(LocalDate dateCreation) {
         this.dateCreation = dateCreation;
     }
+
+
 
     public void setProfessor(Professor professor) {
         this.professor = professor;
@@ -79,16 +84,5 @@ public class Course extends AbstractEntity {
         }
     }
 
-//    public void onDateSelect(SelectEvent event) {
-//        FacesContext facesContext = FacesContext.getCurrentInstance();
-////        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-//        SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
-//        facesContext.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Date Selected", format.format(event.getObject())));
-//    }
-//
-//    public void click() {
-//        PrimeFaces.current().ajax().update("form:display");
-//        PrimeFaces.current().executeScript("PF('dlg').show()");
-//    }
 }
 

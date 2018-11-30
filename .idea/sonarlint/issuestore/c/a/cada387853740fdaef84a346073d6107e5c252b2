@@ -1,0 +1,12 @@
+
+ysquid:S00116"aRename this field "DELETE_OR_FIND_ONE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì–¹
+€squid:UselessImportCheck"URemove this unused import 'br.com.devdojo.examgenerator.annotation.ExceptionHandler'.(˜ô¼Ï8¬ú›¶õ,
+jsquid:S00116"SRename this field "LIST_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¸¬"
+8squid:S1170"!Make this final field static too.(Ì–¹
+Qsquid:S1068":Remove this unused "DELETE_OR_FIND_ONE_URL" private field.(Ì–¹
+„squid:UselessImportCheck"TRemove this unused import 'br.com.devdojo.examgenerator.persistence.model.Question'.(ÙèˆÆşÿÿÿÿ8ĞùÉµõ,
+ysquid:S00116"\Rename this field "CREATE_UPDATE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÒ£ùÿÿÿÿ
+Jsquid:S1948".Make "restRemplate" transient or serializable.(Ä¾§ƒúÿÿÿÿ
+7squid:S1170"!Make this final field static too.(±¸¬"
+=squid:S1170"!Make this final field static too.(êÒ£ùÿÿÿÿ
+\squid:S1948"9Make "choiceListTypeReference" transient or serializable.(¡‡Í»ùÿÿÿÿ8êİìŒõ,

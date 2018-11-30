@@ -6,7 +6,10 @@ import br.com.devdojo.examgenerator.persistence.dao.QuestionDAO;
 import br.com.devdojo.examgenerator.persistence.model.Choice;
 import br.com.devdojo.examgenerator.persistence.model.Question;
 import org.omnifaces.util.Messages;
+import org.primefaces.event.RowEditEvent;
 
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -50,6 +53,14 @@ public class ChoiceBean implements Serializable {
 
     private void buildChoiceWithQuestion(){
         choice = Choice.Builder.newChoice().question(question).build();
+    }
+
+    @ExceptionHandler
+    public void onRowEditUpdateChoice(RowEditEvent event) {
+        Choice choice = (Choice) event.getObject();
+        choiceDAO.update(choice);
+        search();
+        Messages.addGlobalInfo("A escolha {0} foi atualizada com sucesso.", choice.getTitle());
     }
 
     public Choice getChoice() {

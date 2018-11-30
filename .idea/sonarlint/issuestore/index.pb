@@ -23,8 +23,6 @@ x
 Hsrc/main/java/br/com/devdojo/examgenerator/persistence/dao/LoginDAO.java,b\a\ba89e2254f4ee6472dc0773a130e0ab60396d6d6
 |
 Lsrc/main/java/br/com/devdojo/examgenerator/persistence/dao/ProfessorDAO.java,a\2\a250f127640dc61fcfd54fccfc8048572c09472d
-z
-Jsrc/main/java/br/com/devdojo/examgenerator/custom/CustomTypeReference.java,6\7\67bc8a3904d4691ff4b75c2ac1062a83e8ad0f31
 y
 Isrc/main/java/br/com/devdojo/examgenerator/persistence/dao/CourseDAO.java,5\4\54079390430bd7670dacd6c7cdda59997e0b9788
 z
@@ -87,3 +85,13 @@ I
 Nsrc/main/java/br/com/devdojo/examgenerator/bean/question/QuestionEditBean.java,0\a\0a6918d929ec89ad5e7170079b4ab9043e01b383
 G
 web/question/edit.xhtml,1\4\1471a0ed96d0a86ba17af4d3c50e619bc186f212
+x
+Hsrc/main/java/br/com/devdojo/examgenerator/persistence/model/Choice.java,b\7\b70f29933daa8d45d227d6f4c18f417551ff28bd
+H
+web/choice/choices.xhtml,1\a\1a5fbedadfbb682a61f63c9b1981d9733fd3ce55
+v
+Fsrc/main/java/br/com/devdojo/examgenerator/bean/choice/ChoiceBean.java,9\f\9fdbcb02bf256941b9ad05b2819c934dfbc1901b
+y
+Isrc/main/java/br/com/devdojo/examgenerator/persistence/dao/ChoiceDAO.java,c\a\cada387853740fdaef84a346073d6107e5c252b2
+|
+Lsrc/main/java/br/com/devdojo/examgenerator/bean/professor/ProfessorBean.java,7\9\79e23237b0c700d6e133ff1451691ba4788d69e7

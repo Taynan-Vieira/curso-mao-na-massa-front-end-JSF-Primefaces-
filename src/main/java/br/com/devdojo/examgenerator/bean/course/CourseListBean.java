@@ -20,18 +20,22 @@ public class CourseListBean implements Serializable {
     private String name = "";
     private LocalDate dateCreationCourse, dateEventCourse;
 
+    @PostConstruct
+    public void init(){
+        search();
+        search2();
+        search3();
+    }
+
     @Inject
     public CourseListBean(CourseDAO courseDAO) {
         this.courseDAO = courseDAO;
     }
 
-    @PostConstruct
-    public void init(){
-        search();
-    }
 
     public void search(){
         courseList = courseDAO.list(name);
+        listDateCreationCourse = courseDAO.listDateCreateCourse(dateCreationCourse);
     }
 
     public List<Course> getCourseList() {
@@ -53,8 +57,6 @@ public class CourseListBean implements Serializable {
     public void setCourseList(List<Course> courseList) {
         this.courseList = courseList;
     }
-    
-
 
     public String getName() {
         return name;
@@ -63,7 +65,5 @@ public class CourseListBean implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-
-
 
 }

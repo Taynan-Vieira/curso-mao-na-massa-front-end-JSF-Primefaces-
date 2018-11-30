@@ -16,21 +16,39 @@
                 <h:outputLabel value="Title"/>
                 <p:inputText value="#{choiceBean.choice.title}"/>
                 <h:outputLabel value="Esta é a resposta correta?"/>
-                <p:selectBooleanButton value="#{choiceBean.choice.correctAnswer}" onLabel="Yes"                          offLabel="No" onIcon="pi pi-check">
-
+                <p:selectBooleanButton value="#{choiceBean.choice.correctAnswer}" onLabel="Yes" offLabel="No"
+                                       onIcon="pi pi-check">
                 </p:selectBooleanButton>
                 <p:commandButton value="Criar Escolha" actionListener="#{choiceBean.save}"
-                                 ajax="true" update="form dataTable"/>
+                                 ajax="true" update="form"/>
             </h:panelGrid>
+            <p:remoteCommand name="onRowEdit" update="dataTable"/>
+            <p:dataTable value="#{choiceBean.choiceList}"
+                         var="choice" id="dataTable" editable="true">
+
+                <p:ajax event="rowEdit" listener="#{choiceBean.onRowEditUpdateChoice}" oncomplete="onRowEdit()"/>
+
+                <p:column headerText="Alternativa Titulo">
+                    <p:cellEditor>
+                        <f:facet name="output"> <h:outputText value="#{choice.title}"/></f:facet>
+                        <f:facet name="input"><h:inputText value="#{choice.title}"/></f:facet>
+                    </p:cellEditor>
+                </p:column>
+                <p:column headerText="Resposta Correta">
+                    <p:cellEditor>
+                    <f:facet name="output"><h:outputText value="#{choice.correctAnswer}"/></f:facet>
+                    <f:facet name="input">
+                        <h:selectOneMenu value="#{choice.correctAnswer}">
+                            <f:selectItem itemValue="#{true}" itemLabel="True"/>
+                            <f:selectItem itemValue="#{false}" itemLabel="False"/>
+                        </h:selectOneMenu>
+                    </f:facet>
+                    </p:cellEditor>
+                </p:column>
+                <p:column style="width:35px">
+                    <p:rowEditor />
+                </p:column>
+            </p:dataTable>
         </o:form>
-        <p:dataTable value="#{choiceBean.choiceList}"
-                     var="choice" id="dataTable">
-            <p:column headerText="Alternativa Titulo">
-                <h:outputText value="#{choice.title}"></h:outputText>
-            </p:column>
-            <p:column headerText="Resposta Correta">
-                <h:outputText value="#{choice.correctAnswer}"></h:outputText>
-            </p:column>
-        </p:dataTable>
     </ui:define>
 </ui:composition>

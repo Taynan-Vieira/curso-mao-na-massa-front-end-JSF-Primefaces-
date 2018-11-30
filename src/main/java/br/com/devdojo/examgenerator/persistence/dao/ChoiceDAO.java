@@ -14,9 +14,7 @@ import javax.inject.Inject;
 import java.io.Serializable;
 import java.util.List;
 
-import static org.springframework.http.HttpMethod.GET;
-import static org.springframework.http.HttpMethod.POST;
-import static org.springframework.http.HttpMethod.PUT;
+import static org.springframework.http.HttpMethod.*;
 
 public class ChoiceDAO implements Serializable {
     private final String LIST_URL = ApiUtil.BASE_URL + "/professor/course/question/choice/list/{questionId}/";
@@ -48,6 +46,10 @@ public class ChoiceDAO implements Serializable {
 
     private Choice createOrUpdate(HttpMethod httpMethod, Choice choice) {
         return restRemplate.exchange(CREATE_UPDATE_URL, httpMethod, jsonUtil.tokenizedHttpEntityHeader(choice), Choice.class).getBody();
+    }
+
+    public void delete(Choice choice) {
+        restRemplate.exchange(DELETE_OR_FIND_ONE_URL, DELETE, jsonUtil.tokenizedHttpEntityHeader(choice), Choice.class, choice.getId());
     }
 
 }

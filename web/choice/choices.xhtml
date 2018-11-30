@@ -48,7 +48,17 @@
                 <p:column style="width:35px">
                     <p:rowEditor />
                 </p:column>
+                <p:column style="width:35px">
+                    <p:commandLink action="#{choiceBean.delete(choice)}" update="dataTable">
+                        <i class="fa fa-trash-o"/>
+                        <p:confirm header="Confirmação" message="Você tem certeza?" icon="ui-icon-alert"/>
+                    </p:commandLink>
+                </p:column>
             </p:dataTable>
+            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>
+            </p:confirmDialog>
         </o:form>
     </ui:define>
 </ui:composition>

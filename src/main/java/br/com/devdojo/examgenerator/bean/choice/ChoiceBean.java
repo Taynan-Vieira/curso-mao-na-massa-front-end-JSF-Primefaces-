@@ -59,8 +59,14 @@ public class ChoiceBean implements Serializable {
     public void onRowEditUpdateChoice(RowEditEvent event) {
         Choice choice = (Choice) event.getObject();
         choiceDAO.update(choice);
-        search();
         Messages.addGlobalInfo("A escolha {0} foi atualizada com sucesso.", choice.getTitle());
+    }
+
+    @ExceptionHandler
+    public void delete(Choice choice) {
+        choiceDAO.delete(choice);
+        choiceList.remove(choice);
+        Messages.addGlobalInfo("A escolha {0} foi deletado com sucesso.", choice.getTitle());
     }
 
     public Choice getChoice() {

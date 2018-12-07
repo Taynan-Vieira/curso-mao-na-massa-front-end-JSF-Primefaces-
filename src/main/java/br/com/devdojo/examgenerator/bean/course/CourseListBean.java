@@ -2,6 +2,7 @@ package br.com.devdojo.examgenerator.bean.course;
 
 import br.com.devdojo.examgenerator.persistence.dao.CourseDAO;
 import br.com.devdojo.examgenerator.persistence.model.Course;
+import org.omnifaces.util.Messages;
 
 import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;
@@ -36,6 +37,7 @@ public class CourseListBean implements Serializable {
     public void search(){
         courseList = courseDAO.list(name);
         listDateCreationCourse = courseDAO.listDateCreateCourse(dateCreationCourse);
+
     }
 
     public List<Course> getCourseList() {
